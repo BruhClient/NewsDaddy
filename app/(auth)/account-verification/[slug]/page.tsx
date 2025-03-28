@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { sendVerificationEmail } from "@/server/db/auth/mail";
-import { prisma } from "@/lib/prisma";
 import { getUserByEmail, updateUserByEmail } from "@/server/db/users";
 import { deleteVerificationTokenById, generateVerificationToken, getVerificationTokenByToken } from "@/server/db/auth/verification-token";
 import Link from "next/link";
